@@ -1,0 +1,85 @@
+Class <anonymous struct>
+   size=8 align=4
+   base size=8 base align=4
+<anonymous struct> (0xb712a690) 0
+
+Class <anonymous struct>::<anonymous union>
+   size=4 align=4
+   base size=4 base align=4
+<anonymous struct>::<anonymous union> (0xb712a708) 0
+
+Class <anonymous struct>
+   size=8 align=4
+   base size=8 base align=4
+<anonymous struct> (0xb712a6cc) 0
+
+Class <anonymous struct>
+   size=12 align=4
+   base size=12 base align=4
+<anonymous struct> (0xb712a744) 0
+
+Class <anonymous struct>
+   size=16 align=4
+   base size=16 base align=4
+<anonymous struct> (0xb712a780) 0
+
+Class _IO_marker
+   size=12 align=4
+   base size=12 base align=4
+_IO_marker (0xb712a7bc) 0
+
+Class _IO_FILE
+   size=148 align=4
+   base size=148 base align=4
+_IO_FILE (0xb712a7f8) 0
+
+Class <anonymous struct>
+   size=16 align=4
+   base size=16 base align=4
+<anonymous struct> (0xb712a870) 0
+
+Vtable for base1
+base1::_ZTV5base1: 3u entries
+0     (int (*)(...))0
+4     (int (*)(...))(& _ZTI5base1)
+8     base1::f
+
+Class base1
+   size=4 align=4
+   base size=4 base align=4
+base1 (0xb712a8ac) 0 nearly-empty
+    vptr=((& base1::_ZTV5base1) + 8u)
+
+Vtable for base2
+base2::_ZTV5base2: 3u entries
+0     (int (*)(...))0
+4     (int (*)(...))(& _ZTI5base2)
+8     base2::g
+
+Class base2
+   size=4 align=4
+   base size=4 base align=4
+base2 (0xb712a924) 0 nearly-empty
+    vptr=((& base2::_ZTV5base2) + 8u)
+
+Vtable for derived
+derived::_ZTV7derived: 8u entries
+0     (int (*)(...))0
+4     (int (*)(...))(& _ZTI7derived)
+8     derived::f
+12    derived::g
+16    derived::h
+20    (int (*)(...))-0x00000000000000004
+24    (int (*)(...))(& _ZTI7derived)
+28    derived::_ZThn4_N7derived1gEv
+
+Class derived
+   size=8 align=4
+   base size=8 base align=4
+derived (0xb6ffba50) 0
+    vptr=((& derived::_ZTV7derived) + 8u)
+  base1 (0xb712a960) 0 nearly-empty
+      primary-for derived (0xb6ffba50)
+  base2 (0xb712a99c) 4 nearly-empty
+      vptr=((& derived::_ZTV7derived) + 28u)
+

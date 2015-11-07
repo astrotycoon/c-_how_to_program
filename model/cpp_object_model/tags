@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+TARGET	Makefile	/^TARGET=main$/;"	m
+__BASE_H__	base.h	2;"	d
+__BASE_H__	test/base.h	2;"	d
+__DERIVED_NO_OVERRIDE_H__	derived.h	2;"	d
+__DERIVED_OVERRIDE_H__	derived_override.h	2;"	d
+base	base.cpp	/^base::base(int i) : ibase(i)$/;"	f	class:base
+base	base.h	/^class base {$/;"	c
+base	test/base.cpp	/^base::base(int i) : ibase(i)$/;"	f	class:base
+base	test/base.h	/^class base {$/;"	c
+base	test/static.cpp	/^class base {$/;"	c	file:
+count	test/static.cpp	/^	static int count;$/;"	m	class:base	file:
+count	test/static.cpp	/^int base::count = 0;$/;"	m	class:base	file:
+derived	derived.cpp	/^derived::derived(int i) : base(0), iderived(i) $/;"	f	class:derived
+derived	derived.h	/^class derived : public base {$/;"	c
+derived_override	derived_override.cpp	/^derived_override::derived_override(int i) : base(0), iderived(i)$/;"	f	class:derived_override
+derived_override	derived_override.h	/^class derived_override : public base {$/;"	c
+derived_print	derived.cpp	/^void derived::derived_print(void) const$/;"	f	class:derived
+get_count	test/static.cpp	/^void base::get_count(void)$/;"	f	class:base
+get_ibase	base.cpp	/^int base::get_ibase(void) const$/;"	f	class:base
+get_ibase	test/base.cpp	/^int base::get_ibase(void) const$/;"	f	class:base
+get_icount	base.cpp	/^int base::get_icount(void)$/;"	f	class:base
+get_icount	test/base.cpp	/^int base::get_icount(void)$/;"	f	class:base
+ibase	base.h	/^	int ibase;$/;"	m	class:base
+ibase	test/base.h	/^	int ibase;$/;"	m	class:base
+icount	base.cpp	/^int base::icount = 0;$/;"	m	class:base	file:
+icount	base.h	/^	static int icount; $/;"	m	class:base
+icount	test/base.cpp	/^int base::icount = 0;$/;"	m	class:base	file:
+icount	test/base.h	/^	static int icount; $/;"	m	class:base
+iderived	derived.h	/^	int iderived;$/;"	m	class:derived
+iderived	derived_override.h	/^	int iderived;$/;"	m	class:derived_override
+main	base_test.cpp	/^int main(int argc, const char *argv[])$/;"	f
+main	derived_override_test.cpp	/^int main(int argc, const char *argv[])$/;"	f
+main	derived_test.cpp	/^int main(int argc, const char *argv[])$/;"	f
+main	main.cpp	/^int main(int argc, const char *argv[])$/;"	f
+main	test/base_test.cpp	/^int main(int argc, const char *argv[])$/;"	f
+main	test/static.cpp	/^int main(void)$/;"	f
+pf	base_test.cpp	/^typedef void (*pf)(base *);$/;"	t	file:
+pf	test/base_test.cpp	/^typedef void (*pf)(base *);$/;"	t	file:
+print	base.cpp	/^void base::print(void) const$/;"	f	class:base
+print	derived_override.cpp	/^void derived_override::print(void) const$/;"	f	class:derived_override
+print	test/base.cpp	/^void base::print(void) const$/;"	f	class:base
+test_base_model	main.cpp	/^static void test_base_model(void)$/;"	f	file:
+test_multip_inherit	main.cpp	/^static void test_multip_inherit(void)$/;"	f	file:
+test_multip_virtual_inherit	main.cpp	/^static void test_multip_virtual_inherit(void)$/;"	f	file:
+test_single_inherit_norewrite	main.cpp	/^static void test_single_inherit_norewrite(void)$/;"	f	file:
+test_single_inherit_rewrite	main.cpp	/^static void test_single_inherit_rewrite(void)$/;"	f	file:
+test_single_virtual_inherit	main.cpp	/^static void test_single_virtual_inherit(void)$/;"	f	file:
+~base	base.cpp	/^base::~base(void)$/;"	f	class:base
+~base	test/base.cpp	/^base::~base(void)$/;"	f	class:base
+~derived	derived.cpp	/^derived::~derived(void)$/;"	f	class:derived
+~derived_override	derived_override.cpp	/^derived_override::~derived_override(void)$/;"	f	class:derived_override
